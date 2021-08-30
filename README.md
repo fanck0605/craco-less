@@ -1,5 +1,5 @@
-[![Test Status](https://github.com/DocSpring/craco-less/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/DocSpring/craco-less/actions/workflows/test.yml)
-[![Coverage Status](https://coveralls.io/repos/github/DocSpring/craco-less/badge.svg?branch=master)](https://coveralls.io/github/DocSpring/craco-less?branch=master)
+[![Test Status](https://github.com/fanck0605/craco-less/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/fanck0605/craco-less/actions/workflows/test.yml)
+[![Coverage Status](https://coveralls.io/repos/github/fanck0605/craco-less/badge.svg?branch=master)](https://coveralls.io/github/fanck0605/craco-less?branch=master)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ---
