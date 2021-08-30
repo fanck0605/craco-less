@@ -27,3 +27,13 @@ jobs:
       - run: npx --no-install eslint "**/*.{js,ts}"
       - run: npx --no-install prettier --check "**/*.{js,ts,json,yml,md}"
       - run: npx --no-install jest --ci --coverage
+
+      - if: ${{ contains(matrix.os, 'windows') && github.event_name != 'pull_request' }}
+        env:
+          COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
+        run: Get-Content .\coverage\lcov.info | npx --no-install coveralls
+
+      - if: ${{ !contains(matrix.os, 'windows') && github.event_name != 'pull_request' }}
+        env:
+          COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
+        run: cat ./coverage/lcov.info | npx --no-install coveralls
