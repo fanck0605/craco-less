@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "less": "^4.1.2",
-    "less-loader": "^7.3.0"
+    "less-loader": "^10.2.0"
   },
   "peerDependencies": {
     "@craco/craco": "^6.0.0",
