@@ -1,4 +1,4 @@
-const { mapValues, deepClone, styleRuleByName } = require("./utils");
+const { mapValues, deepClone, styleRuleByName } = require("../lib/utils");
 
 test("the object's values are mapped correctly", () => {
   const oldObject = { a: 2, b: 3, c: 4 };

@@ -1,7 +1,7 @@
 const { createJestConfig } = require("@craco/craco");
 const { processCracoConfig } = require("@craco/craco/lib/config");
 const { applyJestConfigPlugins } = require("@craco/craco/lib/features/plugins");
-const CracoLessPlugin = require("./craco-less");
+const CracoLessPlugin = require("../lib/craco-less");
 const { getCracoContext } = require("./test-utils");
 const { cloneDeep } = require("lodash");
 

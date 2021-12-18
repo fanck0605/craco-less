@@ -1,9 +1,9 @@
 const path = require("path");
-const CracoLessPlugin = require("./craco-less");
+const CracoLessPlugin = require("../lib/craco-less");
 const {
   applyWebpackConfigPlugins,
 } = require("@craco/craco/lib/features/plugins");
-const { styleRuleByName } = require("./utils");
+const { styleRuleByName } = require("../lib/utils");
 const {
   getCracoContext,
   obtainSassRule,

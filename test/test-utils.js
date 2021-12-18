@@ -1,6 +1,6 @@
 const { processCracoConfig } = require("@craco/craco/lib/config");
 const { getCraPaths } = require("@craco/craco/lib/cra");
-const { styleRuleByName } = require("./utils");
+const { styleRuleByName } = require("../lib/utils");
 
 const getCracoContext = (callerCracoConfig, env = process.env.NODE_ENV) => {
   const context = { env };
